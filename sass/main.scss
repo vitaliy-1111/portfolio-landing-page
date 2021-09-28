@@ -1,28 +1,8 @@
-@font-face {
-  font-family: "Gilroy-Bold";
-  src: url("../fonts/Gilroy-Bold.eot");
-  src: url("../fonts/Gilroy-Bold.eot?#iefix") format("embedded-opentype"),
-    url("../fonts/Gilroy-Bold.woff") format("woff"),
-    url("../fonts/Gilroy-Bold.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Gilroy-Medium";
-  src: url("../fonts/Gilroy-Medium.eot");
-  src: url("../fonts/Gilroy-Medium.eot?#iefix") format("embedded-opentype"),
-    url("../fonts/Gilroy-Medium.woff") format("woff"),
-    url("../fonts/Gilroy-Medium.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-.main-title {
-  max-width: 124px;
-  margin-bottom: 23px;
-  font-family: "Gilroy-Bold", sans-serif;
-  font-size: 47px;
-  line-height: calc(58 / 47);
-}
-p {
-  font-family: "Gilroy-Medium", sans-serif;
-}
+@import "./utils/reset";
+@import "./utils/normilize";
+@import "./utils/hidden";
+@import "./base/fonts";
+@import "./base/secondary-title";
+@import "./base/container";
+@import "./layout/hero";
+@import "./layout/about";

@@ -1,0 +1,22 @@
+.main-section {
+  padding-top: 65px;
+  padding-bottom: 83px;
+}
+.main-title {
+  max-width: 124px;
+  margin-bottom: 23px;
+  font-family: "Gilroy-Bold", sans-serif;
+  font-size: 47px;
+  line-height: calc(58 / 47);
+}
+.main-section__text {
+  font-family: "Gilroy-Medium", sans-serif;
+
+  &:not(:last-child) {
+    margin-bottom: 37px;
+  }
+}
+.thumb {
+  display: flex;
+  justify-content: center;
+}
