@@ -2,6 +2,14 @@ body {
   margin: 0;
 }
 
+p,
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -310,6 +318,7 @@ body {
 }
 
 .secondary-title {
+  margin-bottom: 30px;
   font-family: "Gilroy-Bold", sans-serif;
   font-size: 34px;
   line-height: 42px;
@@ -356,5 +365,27 @@ body {
   padding-top: 80px;
   padding-bottom: 75px;
   background-color: #f6f6f6;
+}
+
+.about-section__text {
+  margin: 0;
+  text-align: center;
+}
+
+.about-section__text:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.skills-section {
+  padding-top: 80px;
+  padding-bottom: 100px;
+}
+
+.skills-section__text {
+  text-align: center;
+}
+
+.stars-list__icon {
+  fill: red;
 }
 /*# sourceMappingURL=main.css.map */

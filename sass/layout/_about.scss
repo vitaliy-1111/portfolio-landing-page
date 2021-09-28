@@ -3,3 +3,10 @@
   padding-bottom: 75px;
   background-color: #f6f6f6;
 }
+.about-section__text {
+  margin: 0;
+  text-align: center;
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
