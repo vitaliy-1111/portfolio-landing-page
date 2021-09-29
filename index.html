@@ -16,16 +16,36 @@
   <main>
     <section class="main-section">
       <div class="container">
+        <button type="button" class="menu-button--open js-open-menu">
+          <img src="images/menu.svg" class="menu-button__icon--open" width="33" height="20">
+        </button>
         <h1 class="main-section__title main-title">Denis Novik</h1>
         <p class="main-section__text">UX | UI designer <br> 24 years old, Minsk</p>
         <div class="thumb">
           <img src="images/Denis-mobile-x1.jpg" class="main-section__img" alt="Denis">
         </div>
       </div>
+      <div class="mobile-menu js-menu-container">
+        <button type="button" class="mobile-menu__button--close js-close-menu">
+          <img src="images/close.svg" class="mobile-menu__icon--close" width="22" height="22">
+        </button>
+        <ul class="menu-list list">
+          <li class="menu-list__item"><a href="./index.html"
+              class="menu-list__link menu-list__link--current link">Home</a></li>
+          <li class="menu-list__item"><a href="#about-me" class="menu-list__link link">About me</a></li>
+          <li class="menu-list__item"><a href="#skills" class="menu-list__link link">Skills</a></li>
+          <li class="menu-list__item"><a href="#portfolio" class="menu-list__link link">Portfolio</a></li>
+          <li class="menu-list__item"><a href="#contacts" class="menu-list__link link">Contacts</a></li>
+        </ul>
+        <div class="lang-switch">
+          <button type="button" class="lang-switch__btn">Ru</button><span class="lang-switch__separator">|</span>
+          <button type="button" class="lang-switch__btn lang-switch__btn--current">Eng</button>
+        </div>
+      </div>
     </section>
     <section class="about-section">
       <div class="container">
-        <h2 class="about-section__title secondary-title">About me</h2>
+        <h2 class="about-section__title secondary-title" id="about-me">About me</h2>
         <p class="about-section__text">Hi, I'm Denis – UX/UI designer from Minsk. I'm interested in design and
           everything
           connected with it.</p>
@@ -34,7 +54,7 @@
         <p class="about-section__text">Ready to implement excellent projects with wonderful people.</p>
       </div>
     </section>
-    <section class="skills-section">
+    <section class="skills-section" id="skills">
       <div class="container">
         <h2 class="skiils-section-title secondary-title">Skills</h2>
         <p class="skills-section__text">I work in such programs as</p>
@@ -130,7 +150,7 @@
         </ul>
       </div>
     </section>
-    <section class="portfolio-section">
+    <section class="portfolio-section" id="portfolio">
       <div class="container">
         <h2 class="portfolio-section__title secondary-title">Portfolio</h2>
         <ul class="portfolio-list list">
@@ -153,12 +173,47 @@
             <p class="portfolio-list__text">Braun Landing Page - Concept</p>
           </li>
         </ul>
-
+      </div>
+    </section>
+    <section class="contacts-section" id="contacts">
+      <div class="container">
+        <h2 class="contacts-section__title secondary-title">Contacts</h2>
+        <p class="contacts-section__text">Want to know more or just chat? You are welcome!</p>
+        <button type="button" class="contacts-section__button">Send massage</button>
+        <ul class="socials-list-icons list">
+          <li class="socials-list-icons__item">
+            <img src="./images/linkedin.svg" class="socials-list__icon" alt="linkedin" width="40" height="40">
+          </li>
+          <li class="socials-list-icons__item">
+            <img src="./images/instagram.svg" class="socials-list__icon" alt="instagram" width="40" height="40">
+          </li>
+          <li class="socials-list-icons__item">
+            <img src="./images/behance.svg" class="socials-list__icon" alt="behance" width="40" height="40">
+          </li>
+          <li class="socials-list-icons__item">
+            <img src="./images/dribble.svg" class="socials-list__icon" alt="dribble" width="40" height="40">
+          </li>
+        </ul>
+        <p class="socials-list-text__pre-text">Like me on </p>
+        <ul class="socials-list-text list">
+          <li class="socials-list-text__item"><a href="" class="socials-list-text__link link">LinkedIn, </a>
+          </li>
+          <li class="socials-list-text__item"><a href="" class="socials-list-text__link link">Instagram, </a>
+          </li>
+          <li class="socials-list-text__item"><a href="" class="socials-list-text__link link">Behance, </a>
+          </li>
+          <li class="socials-list-text__item"><a href="" class="socials-list-text__link link">Dribble</a></li>
+        </ul>
 
       </div>
+
     </section>
 
   </main>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"></script>
+  <script defer src="./js/mobile-menu.js"></script>
 
 </body>
 
