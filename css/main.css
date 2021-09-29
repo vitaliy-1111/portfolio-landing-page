@@ -386,7 +386,7 @@ body {
   margin-bottom: 70px;
 }
 
-.skills-list__item {
+.skills-list__item:not(:last-child) {
   margin-bottom: 80px;
 }
 
@@ -418,5 +418,32 @@ body {
 
 .stars-list__item:not(:last-child) {
   margin-right: 10px;
+}
+
+.portfolio-section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: #f6f6f6;
+}
+
+.portfolio-section__title {
+  margin-bottom: 65px;
+}
+
+.portfolio-list__item:not(:last-child) {
+  margin-bottom: 78px;
+}
+
+.portfolio-list__thumb {
+  margin-bottom: 30px;
+}
+
+.portfolio-list__img {
+  margin: auto;
+}
+
+.portfolio-list__text {
+  text-align: center;
+  text-decoration: underline;
 }
 /*# sourceMappingURL=main.css.map */

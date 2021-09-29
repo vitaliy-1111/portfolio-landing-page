@@ -8,7 +8,9 @@
 }
 
 .skills-list__item {
-  margin-bottom: 80px;
+  &:not(:last-child) {
+    margin-bottom: 80px;
+  }
 }
 
 .skills-list__img {
