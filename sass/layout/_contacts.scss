@@ -12,12 +12,15 @@
   margin-right: auto;
   margin-bottom: 40px;
 
-  width: 300px;
+  width: 250px;
   height: 40px;
   border: none;
   color: #ffffff;
   background-color: #000000;
   border-radius: 50px;
+  @media screen and (min-width: 1000px) {
+    width: 180px;
+  }
 }
 
 .socials-list-icons {

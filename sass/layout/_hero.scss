@@ -11,6 +11,9 @@
   padding: 0;
   border: none;
   background-color: transparent;
+  @media screen and(min-width: 768px) {
+    display: none;
+  }
 }
 .main-title {
   max-width: 124px;
@@ -18,15 +21,38 @@
   font-family: "Gilroy-Bold", sans-serif;
   font-size: 47px;
   line-height: calc(58 / 47);
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+  }
 }
 .main-section__text {
   font-family: "Gilroy-Medium", sans-serif;
 
   &:not(:last-child) {
     margin-bottom: 37px;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 0;
+    }
   }
 }
 .thumb {
   display: flex;
   justify-content: center;
+}
+.main-section__text-container {
+  @media screen and (min-width: 768px) {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.main-section__lang-switch {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  @media screen and (min-width: 768px) {
+    transform-origin: top center;
+    transform: rotate(-90deg);
+  }
 }
