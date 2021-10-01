@@ -1,0 +1,24 @@
+.page-header {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  @media screen and (min-width: 768px) {
+    padding-top: 30px;
+  }
+}
+
+.page-header__nav {
+  height: 60px;
+  border-bottom: 1px solid #828282;
+}
+.page-header__list {
+  display: flex;
+  justify-content: space-between;
+}
+.page-header__link {
+  font-family: "Gilroy-Bold", sans-serif;
+  color: #828282;
+  &--current {
+    color: #070707;
+  }
+}
