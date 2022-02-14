@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/main.min.css">
-  <title>Document</title>
+  <title>Portfolio</title>
 </head>
 
 <body>
@@ -28,7 +28,9 @@
     <section class="main-section">
       <div class="container">
         <button type="button" class="menu-button--open js-open-menu">
-          <img src="images/menu.svg" class="menu-button__icon--open" width="33" height="20">
+          <svg class="menu-button__icon--open" width="33" height="20" aria-label="menu">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
         </button>
         <div class="main-section__text-container">
           <h1 class="main-section__title main-title">Denis Novik</h1>
@@ -40,16 +42,19 @@
         </div>
         <div class="thumb">
           <picture>
-            <source srcset="./images/denis-desktop-x1.jpg 1x, ./images/denis-desktop-x2.jpg 2x"
-              media="(min-width: 768px)">
-            <source srcset="./images/denis-mobile-x1.jpg 1x, ./images/denis-mobile-x2.jpg 2x">
-            <img src="images/denis-mobile-x1.jpg" class="main-section__img" alt="Denis">
+            <source srcset="./images/denis-desktop-x1-min.jpg 1x, ./images/denis-desktop-x2-min.jpg 2x"
+              media="(min-width: 768px)" type="image/jpeg">
+            <source srcset="./images/denis-mobile-x1-min.jpg 1x, ./images/denis-mobile-x2-min.jpg 2x"
+              type="image/jpeg" />
+            <img src="images/denis-desktop-x1-min.jpg" class="main-section__img" alt="Denis">
           </picture>
         </div>
       </div>
       <div class="mobile-menu js-menu-container">
-        <button type="button" class="mobile-menu__button--close js-close-menu">
-          <img src="./images/close.svg" class="mobile-menu__icon--close" width="22" height="22">
+        <button type="button" class="mobile-menu__button--close js-close-menu" aria-label="close">
+          <svg class="mobile-menu__icon--close" width="22" height="22" aria-label="close">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
         </button>
         <ul class="menu-list list">
           <li class="menu-list__item"><a href="./index.html"
@@ -82,90 +87,134 @@
         <p class="skills-section__text">I work in such programs as</p>
         <ul class="skills-list list">
           <li class="skills-list__item">
-            <img src="./images/photoshop.svg" width="90" height="90" class="skills-list__img">
-
+            <svg class="skills-list__img" width="90" height="90" aria-label="Adobe Photoshop">
+              <use href="./images/icons.svg#icon-photoshop"></use>
+            </svg>
             <p class="skills-list__text">Adobe Photoshop</p>
             <ul class="stars-list list">
               <li class="stars-list__item">
-                <img src="./images/star.svg" class="stars-list__icon" width="26" height="26">
+                <svg class="stars-list__icon" width="26" height="26" aria-label="star">
+                  <use href="./images/icons.svg#icon-star"></use>
+                </svg>
               </li>
               <li class="stars-list__item">
-                <img src="./images/star.svg" class="stars-list__icon" width="26" height="26">
+                <svg class="stars-list__icon" width="26" height="26" aria-label="star">
+                  <use href="./images/icons.svg#icon-star"></use>
+                </svg>
               </li>
               <li class="stars-list__item">
-                <img src="./images/star.svg" class="stars-list__icon" width="26" height="26">
+                <svg class="stars-list__icon" width="26" height="26" aria-label="star">
+                  <use href="./images/icons.svg#icon-star"></use>
+                </svg>
               </li>
               <li class="stars-list__item">
-                <img src="./images/star.svg" class="stars-list__icon" width="26" height="26">
+                <svg class="stars-list__icon" width="26" height="26" aria-label="star">
+                  <use href="./images/icons.svg#icon-star"></use>
+                </svg>
               </li>
               <li class="stars-list__item">
-                <img src="./images/star-1.svg" class="stars-list__icon" width="26" height="26">
+                <svg class="stars-list__icon" width="26" height="26" aria-label="star">
+                  <use href="./images/icons.svg#icon-star-1"></use>
+                </svg>
               </li>
             </ul>
           </li>
           <li class="skills-list__item">
-            <img src="./images/illustrator.svg" width="90" height="90" class="skills-list__img">
-
+            <svg class="skills-list__img" width="90" height="90" aria-label="illustrator">
+              <use href="./images/icons.svg#icon-Illustrator"></use>
+            </svg>
             <p class="skills-list__text">Adobe Illustrator</p>
             <ul class="stars-list list">
               <li class="stars-list__item">
-                <img src="./images/star.svg" class="stars-list__icon" width="26" height="26">
+                <svg class="stars-list__icon" width="26" height="26" aria-label="star">
+                  <use href="./images/icons.svg#icon-star"></use>
+                </svg>
               </li>
               <li class="stars-list__item">
-                <img src="./images/star.svg" class="stars-list__icon" width="26" height="26">
+                <svg class="stars-list__icon" width="26" height="26" aria-label="star">
+                  <use href="./images/icons.svg#icon-star"></use>
+                </svg>
               </li>
               <li class="stars-list__item">
-                <img src="./images/star.svg" class="stars-list__icon" width="26" height="26">
+                <svg class="stars-list__icon" width="26" height="26" aria-label="star">
+                  <use href="./images/icons.svg#icon-star"></use>
+                </svg>
               </li>
               <li class="stars-list__item">
-                <img src="./images/star-1.svg" class="stars-list__icon" width="26" height="26">
+                <svg class="stars-list__icon" width="26" height="26" aria-label="star">
+                  <use href="./images/icons.svg#icon-star-1"></use>
+                </svg>
               </li>
               <li class="stars-list__item">
-                <img src="./images/star-1.svg" class="stars-list__icon" width="26" height="26">
+                <svg class="stars-list__icon" width="26" height="26" aria-label="star">
+                  <use href="./images/icons.svg#icon-star-1"></use>
+                </svg>
               </li>
             </ul>
           </li>
           <li class="skills-list__item">
-            <img src="./images/after-effects.svg" width="89" height="90" class="skills-list__img">
-
+            <svg class="skills-list__img" width="90" height="90" aria-label="/after-effects">
+              <use href="./images/icons.svg#icon-after-effects"></use>
+            </svg>
             <p class="skills-list__text">Adobe After Effects</p>
             <ul class="stars-list list">
               <li class="stars-list__item">
-                <img src="./images/star.svg" class="stars-list__icon" width="26" height="26">
+                <svg class="stars-list__icon" width="26" height="26" aria-label="star">
+                  <use href="./images/icons.svg#icon-star"></use>
+                </svg>
               </li>
               <li class="stars-list__item">
-                <img src="./images/star.svg" class="stars-list__icon" width="26" height="26">
+                <svg class="stars-list__icon" width="26" height="26" aria-label="star">
+                  <use href="./images/icons.svg#icon-star"></use>
+                </svg>
               </li>
               <li class="stars-list__item">
-                <img src="./images/star.svg" class="stars-list__icon" width="26" height="26">
+                <svg class="stars-list__icon" width="26" height="26" aria-label="star">
+                  <use href="./images/icons.svg#icon-star"></use>
+                </svg>
               </li>
               <li class="stars-list__item">
-                <img src="./images/star.svg" class="stars-list__icon" width="26" height="26">
+                <svg class="stars-list__icon" width="26" height="26" aria-label="star">
+                  <use href="./images/icons.svg#icon-star"></use>
+                </svg>
               </li>
               <li class="stars-list__item">
-                <img src="./images/star-1.svg" class="stars-list__icon" width="26" height="26">
+                <svg class="stars-list__icon" width="26" height="26" aria-label="star">
+                  <use href="./images/icons.svg#icon-star-1"></use>
+                </svg>
               </li>
             </ul>
           </li>
           <li class="skills-list__item">
-            <img src="./images/figma.svg" width="59" height="90" class="skills-list__img">
-
+            <svg class="skills-list__img" width="90" height="90" aria-label="figma">
+              <use href="./images/icons.svg#icon-figma"></use>
+            </svg>
             <p class="skills-list__text">Figma</p>
             <ul class="stars-list list">
               <li class="stars-list__item">
-                <img src="./images/star.svg" class="stars-list__icon" width="26" height="26">
+                <svg class="stars-list__icon" width="26" height="26" aria-label="star">
+                  <use href="./images/icons.svg#icon-star"></use>
+                </svg>
               </li>
               <li class="stars-list__item">
-                <img src="./images/star.svg" class="stars-list__icon" width="26" height="26">
+                <svg class="stars-list__icon" width="26" height="26" aria-label="star">
+                  <use href="./images/icons.svg#icon-star"></use>
+                </svg>
               </li>
               <li class="stars-list__item">
-                <img src="./images/star.svg" class="stars-list__icon" width="26" height="26">
+                <svg class="stars-list__icon" width="26" height="26" aria-label="star">
+                  <use href="./images/icons.svg#icon-star"></use>
+                </svg>
               </li>
               <li class="stars-list__item">
-                <img src="./images/star.svg" class="stars-list__icon" width="26" height="26">
+                <svg class="stars-list__icon" width="26" height="26" aria-label="star">
+                  <use href="./images/icons.svg#icon-star"></use>
+                </svg>
               </li>
               <li class="stars-list__item">
-                <img src="./images/star-1.svg" class="stars-list__icon" width="26" height="26">
+                <svg class="stars-list__icon" width="26" height="26" aria-label="star">
+                  <use href="./images/icons.svg#icon-star-1"></use>
+                </svg>
               </li>
             </ul>
           </li>
@@ -179,10 +228,12 @@
           <li class="portfolio-list__item">
             <div class="portfolio-list__thumb">
               <picture>
-                <source srcset="./images/fashion-store-desktop-x1.jpg 1x, ./images/fashion-store-desktop-x2.jpg 2x"
+                <source
+                  srcset="./images/fashion-store-desktop-x1-min.jpg 1x, ./images/fashion-store-desktop-x2-min.jpg 2x"
                   media="(min-width: 768px)">
-                <source srcset="./images/fashion-store-mobile-x1.jpg 1x, ./images/fashion-store-mobile-x2.jpg 2x">
-                <img src="./images/fashion-store-mobile-x1.jpg" class="portfolio-list__img" alt="girl on magazine">
+                <source
+                  srcset="./images/fashion-store-mobile-x1-min.jpg 1x, ./images/fashion-store-mobile-x2-min.jpg 2x">
+                <img src="./images/fashion-store-mobile-x1-min.jpg" class="portfolio-list__img" alt="girl on magazine">
               </picture>
             </div>
             <p class="portfolio-list__text">Online fashion store - Homepage</p>
@@ -190,10 +241,12 @@
           <li class="portfolio-list__item">
             <div class="portfolio-list__thumb">
               <picture>
-                <source srcset="./images/reebok_concept-desktop-x1.jpg 1x, ./images/reebok_concept-desktop-x2.jpg 2x"
+                <source
+                  srcset="./images/reebok_concept-desktop-x1-min.jpg 1x, ./images/reebok_concept-desktop-x2-min.jpg 2x"
                   media="(min-width: 768px)">
-                <source srcset="./images/reebok_concept-mobile-x1.jpg 1x, ./images/reebok_concept-mobile-x2.jpg 2x">
-                <img src="./images/reebok_concept-mobile-x1.jpg" class="portfolio-list__img" alt="man jumping">
+                <source
+                  srcset="./images/reebok_concept-mobile-x1-min.jpg 1x, ./images/reebok_concept-mobile-x2-min.jpg 2x">
+                <img src="./images/reebok_concept-mobile-x1-min.jpg" class="portfolio-list__img" alt="man jumping">
               </picture>
             </div>
             <p class="portfolio-list__text">Reebok Store - Concept</p>
@@ -201,10 +254,10 @@
           <li class="portfolio-list__item">
             <div class="portfolio-list__thumb">
               <picture>
-                <source srcset="./images/braun-desktop-x1.jpg 1x, ./images/braun-desktop-x2.jpg 2x"
+                <source srcset="./images/braun-desktop-x1-min.jpg 1x, ./images/braun-desktop-x2-min.jpg 2x"
                   media="(min-width: 768px)">
-                <source srcset="./images/braun-mobile-x1.jpg 1x, ./images/braun-mobile-x2.jpg 2x">
-                <img src="./images/braun-mobile-x1.jpg" class="portfolio-list__img" alt="videocamera">
+                <source srcset="./images/braun-mobile-x1-min.jpg 1x, ./images/braun-mobile-x2-min.jpg 2x">
+                <img src="./images/braun-mobile-x1-min.jpg" class="portfolio-list__img" alt="videocamera">
               </picture>
             </div>
             <p class="portfolio-list__text">Braun Landing Page - Concept</p>
@@ -219,27 +272,43 @@
         <button type="button" class="contacts-section__button">Send massage</button>
         <ul class="socials-list-icons list">
           <li class="socials-list-icons__item">
-            <img src="./images/linkedin.svg" class="socials-list__icon" alt="linkedin" width="40" height="40">
+            <a href="#" class="socials-list__link socials-list__link--color link">
+              <svg class="socials-list__icon" width="40" height="40" aria-label="linkedin">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
           </li>
           <li class="socials-list-icons__item">
-            <img src="./images/instagram.svg" class="socials-list__icon" alt="instagram" width="40" height="40">
+            <a href="#" class="socials-list__link socials-list__link--color link">
+              <svg class="socials-list__icon" width="40" height="40" aria-label="instagram">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
           </li>
           <li class="socials-list-icons__item">
-            <img src="./images/behance.svg" class="socials-list__icon" alt="behance" width="40" height="40">
+            <a href="#" class="socials-list__link socials-list__link--color link">
+              <svg class="socials-list__icon" width="40" height="40" aria-label="behance">
+                <use href="./images/icons.svg#icon-behance"></use>
+              </svg>
+            </a>
           </li>
           <li class="socials-list-icons__item">
-            <img src="./images/dribble.svg" class="socials-list__icon" alt="dribble" width="40" height="40">
+            <a href="#" class="socials-list__link socials-list__link--color link">
+              <svg class="socials-list__icon" width="40" height="40" aria-label="dribble">
+                <use href="./images/icons.svg#icon-dribble"></use>
+              </svg>
+            </a>
           </li>
         </ul>
         <p class="socials-list-text__pre-text">Like me on </p>
         <ul class="socials-list-text list">
-          <li class="socials-list-text__item"><a href="" class="socials-list-text__link link">LinkedIn, </a>
+          <li class="socials-list-text__item"><a href="#" class="socials-list-text__link link">LinkedIn, </a>
           </li>
-          <li class="socials-list-text__item"><a href="" class="socials-list-text__link link">Instagram, </a>
+          <li class="socials-list-text__item"><a href="#" class="socials-list-text__link link">Instagram, </a>
           </li>
-          <li class="socials-list-text__item"><a href="" class="socials-list-text__link link">Behance, </a>
+          <li class="socials-list-text__item"><a href="#" class="socials-list-text__link link">Behance, </a>
           </li>
-          <li class="socials-list-text__item"><a href="" class="socials-list-text__link link">Dribble</a></li>
+          <li class="socials-list-text__item"><a href="#" class="socials-list-text__link link">Dribble</a></li>
         </ul>
 
       </div>
