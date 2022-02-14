@@ -18,7 +18,12 @@
 .page-header__link {
   font-family: "Gilroy-Bold", sans-serif;
   color: #828282;
+  transition: 250ms color linear;
   &--current {
+    color: #070707;
+  }
+  &:hover,
+  :focus {
     color: #070707;
   }
 }

@@ -18,8 +18,15 @@
   color: #ffffff;
   background-color: #000000;
   border-radius: 50px;
+
+  cursor: pointer;
+  transition: 250ms background-color linear;
   @media screen and (min-width: 1000px) {
     width: 180px;
+  }
+  &:hover,
+  :focus {
+    background-color: #828282;
   }
 }
 
@@ -47,8 +54,20 @@
 .socials-list-text__link {
   font-size: 14px;
   color: #828282;
+  transition: 250ms color linear;
+  &:hover,
+  :focus {
+    color: #070707;
+  }
 }
 .socials-list-text__pre-text {
   text-align: center;
   color: #828282;
+}
+.socials-list__icon {
+  transition: 250ms fill linear;
+  &:hover,
+  :focus {
+    fill: #828282;
+  }
 }

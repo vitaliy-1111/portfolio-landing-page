@@ -373,9 +373,16 @@ body {
 .page-header__link {
   font-family: "Gilroy-Bold", sans-serif;
   color: #828282;
+  -webkit-transition: 250ms color linear;
+  transition: 250ms color linear;
 }
 
 .page-header__link--current {
+  color: #070707;
+}
+
+.page-header__link:hover,
+.page-header__link :focus {
   color: #070707;
 }
 
@@ -387,7 +394,7 @@ body {
 
 .menu-button--open {
   position: absolute;
-  top: 65px;
+  top: 25px;
   right: 15px;
   -webkit-transform: translate(-50%, 50%);
           transform: translate(-50%, 50%);
@@ -469,6 +476,10 @@ body {
   }
 }
 
+.lang-switch__btn {
+  cursor: pointer;
+}
+
 .mobile-menu {
   position: absolute;
   top: 0;
@@ -490,10 +501,10 @@ body {
 
 .mobile-menu__button--close {
   position: absolute;
-  top: 65px;
+  top: 25px;
   right: 15px;
-  -webkit-transform: translate(-50%, 50%);
-          transform: translate(-50%, 50%);
+  -webkit-transform: translate(-100%, 50%);
+          transform: translate(-100%, 50%);
   padding: 0;
   border: none;
   background-color: transparent;
@@ -631,6 +642,7 @@ body {
 }
 
 .skills-list__img {
+  display: block;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 25px;
@@ -709,12 +721,20 @@ body {
   color: #ffffff;
   background-color: #000000;
   border-radius: 50px;
+  cursor: pointer;
+  -webkit-transition: 250ms background-color linear;
+  transition: 250ms background-color linear;
 }
 
 @media screen and (min-width: 1000px) {
   .contacts-section__button {
     width: 180px;
   }
+}
+
+.contacts-section__button:hover,
+.contacts-section__button :focus {
+  background-color: #828282;
 }
 
 .socials-list-icons {
@@ -748,10 +768,27 @@ body {
 .socials-list-text__link {
   font-size: 14px;
   color: #828282;
+  -webkit-transition: 250ms color linear;
+  transition: 250ms color linear;
+}
+
+.socials-list-text__link:hover,
+.socials-list-text__link :focus {
+  color: #070707;
 }
 
 .socials-list-text__pre-text {
   text-align: center;
   color: #828282;
+}
+
+.socials-list__icon {
+  -webkit-transition: 250ms fill linear;
+  transition: 250ms fill linear;
+}
+
+.socials-list__icon:hover,
+.socials-list__icon :focus {
+  fill: #828282;
 }
 /*# sourceMappingURL=main.css.map */

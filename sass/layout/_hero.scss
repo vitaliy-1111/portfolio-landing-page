@@ -5,7 +5,7 @@
 }
 .menu-button--open {
   position: absolute;
-  top: 65px;
+  top: 25px;
   right: 15px;
   transform: translate(-50%, 50%);
   padding: 0;
@@ -55,4 +55,7 @@
     transform-origin: top center;
     transform: rotate(-90deg);
   }
+}
+.lang-switch__btn {
+  cursor: pointer;
 }
